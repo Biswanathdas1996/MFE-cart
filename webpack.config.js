@@ -5,7 +5,7 @@ const path = require("path");
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:8101/",
+    publicPath: "https://mfe-cart.netlify.app/",
   },
 
   resolve: {
@@ -52,7 +52,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Cart": "./src/components/Cart"
+        "./Cart": "./src/components/Cart",
       },
       shared: {
         ...deps,
